@@ -1,0 +1,146 @@
+#content {
+    width: 85%;
+    margin-left: 5%;
+}
+
+section {
+    width: 100%;
+    margin-top: 50px;
+}
+
+form {
+    width: 80%;
+    margin-left: 10%;
+}
+
+form h3 {
+    font-size: 24px;
+    font-family: 'ubuntu', sans-serif;
+    color: #CCCCCC;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.selectjogos {
+    width: 30%;
+    height: 30px;
+    background: #696969;
+    color: WHITE;
+    border: 0px;
+    border-radius: 4px;
+}
+
+#buttonComparar {
+    width: 10%;
+    height: 30px;
+    font-family: 'ubuntu', sans-serif;
+	color: #CCCCCC;
+    background: #2F4F4F;
+    border: 0px;
+}
+
+#buttonComparar:hover {
+    background: #6495ED;
+}
+
+.esquerdo {
+    width: 47%;
+    float: left;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    margin-left: 3%;
+}
+
+.esquerdo h2 {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'ubuntu', sans-serif;
+    color: #CCCCCC;
+    margin-bottom: 30px;
+}
+
+.esquerdo img {
+    width: 213px;
+    height: 300px;
+    margin-left: 30%;
+    margin-bottom: 50px;
+}
+
+.esquerdo h3 {
+    font-size: 24px;
+    font-family: 'ubuntu', sans-serif;
+    color: #CCCCCC;
+    margin-bottom: 20px;
+}
+
+.esquerdo p {
+    font-size: 18px;
+    font-family: 'ubuntu', sans-serif;
+    color: #CCCCCC;
+    margin-left: 20px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.esquerdo h4 {
+    font-size: 18px;
+    font-family: 'ubuntu', sans-serif;
+    color: #CCCCCC;
+    margin-top: 50px;
+}
+
+.esquerdo h4 a {
+    color: #CCCCCC;
+}
+
+
+
+.direito {
+    width: 47%;
+    float: left;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    margin-left: 3%;
+}
+
+.direito h2 {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'ubuntu', sans-serif;
+    color: #CCCCCC;
+    margin-bottom: 30px;
+}
+
+.direito img {
+    width: 213px;
+    height: 300px;
+    margin-left: 30%;
+    margin-bottom: 50px;
+}
+
+.direito h3 {
+    font-size: 24px;
+    font-family: 'ubuntu', sans-serif;
+    color: #CCCCCC;
+    margin-bottom: 20px;
+}
+
+.direito p {
+    font-size: 18px;
+    font-family: 'ubuntu', sans-serif;
+    color: #CCCCCC;
+    margin-left: 20px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.direito h4 {
+    font-size: 18px;
+    font-family: 'ubuntu', sans-serif;
+    color: #CCCCCC;
+    margin-top: 50px;
+}
+
+.direito h4 a {
+    color: #CCCCCC;
+}

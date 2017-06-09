@@ -1,0 +1,13 @@
+#wrap {
+    width: 100%;
+    height: 629px;
+    background: #2F4F4F;
+}
+
+#pimg img{
+    width: 500px;
+    height: 223px;
+    position: relative;
+    left: 30%;
+    top: 160px;
+}

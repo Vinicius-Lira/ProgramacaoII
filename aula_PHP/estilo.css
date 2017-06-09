@@ -1,0 +1,35 @@
+*{
+    margin: 0 px;
+}
+
+body {
+    background: #6495ED;
+}
+
+#formulario {
+    width: 320px;
+    background: #FFFFFF;
+    position: relative;
+    left: 35%;
+    top: 150px;
+
+}
+
+#formulario form input {
+    width: 300px;
+    height: 25px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+#senha {
+    margin-bottom: 10px;
+}
+
+#login {
+    width: 320px;
+    font-size: 10px;
+    position: relative;
+    left: 44%;
+    top: 150px;
+}

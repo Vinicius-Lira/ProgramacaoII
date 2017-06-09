@@ -1,0 +1,8 @@
+1) Ajustar a questão 2 da aula passada, de modo que a página login.php seja renomeada para index.php
+receberá além do usuário e senha também um campo nome. Na página testa.php é iniciada uma sessão de modo 
+que se o usuário e senha estejam corretos, o nome do usuário seja passado para a sessão e ocorra o redirecionamento
+da página para a conteudo.php e lá seja mostrada a mensagem: Olá nomedousuario!
+
+2) Faça os ajustes necessários para que depois do usuário já estar logado, ele possa deslogar e a sessão seja destruída, de modo
+que  ocorra o redirecionamento para a página index.php novamente. Caso o usuário ir novamente para a index.php antes de deslogar, ela
+já deve redirecionar para a conteúdo.php, visto que o usuário já está logado.

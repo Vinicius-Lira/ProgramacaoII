@@ -1,0 +1,14 @@
+*{
+	padding: 0px;
+}
+
+#texto {
+	color: white;
+}
+.formulario {
+	padding: 2px;
+	padding-left: 10px;
+	width: 300px;
+	height: 250px;
+	background: black;
+}

@@ -15,6 +15,8 @@
 	$pagcontato = "contato.php";
 	$pagparcerias = "parcerias.html";
 
+	$plataformaLoc  = "plataforma.php";
+
 	include("header.php");
 
 	include("config_DB/conect.php");

@@ -19,7 +19,7 @@
 
 	include("header.php");
 
-	include("config_DB/conect.php");
+	include("config_DB/connect.php");
 
 ?>
 <style>
@@ -49,7 +49,7 @@
 
 					<h2>JOGOS <?php print $plataforma ?></h2>
 					<?php
-							//Se não existir registros da plataforma passado via parametro da um echo da mensagem 
+							//Se não existir registros da plataforma passado via parametro da um echo da mensagem
 							if($num_rows == 0){
 								echo '<h2>Não existe jogos nessa plataforma</h2>';
 							}

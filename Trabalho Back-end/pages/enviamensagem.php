@@ -1,5 +1,5 @@
 <?php
-    include("config_DB/conect.php");
+    include("config_DB/connect.php");
 
     if(isset($_POST['Nome']) && isset($_POST['Email']) && isset($_POST['Mensagem'])){
         $nome = $_POST['Nome'];

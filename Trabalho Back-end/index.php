@@ -19,7 +19,7 @@
 
 	include("pages/header.php");
 
-	include("pages/config_DB/conect.php");
+	include("pages/config_DB/connect.php");
 ?>
 <!-- Importa os estilos -->
 <style>

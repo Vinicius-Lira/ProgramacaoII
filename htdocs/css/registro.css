@@ -1,0 +1,96 @@
+#content {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+#registro {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: #2F4F4F;
+}
+
+::-webkit-input-placeholder {
+   color: #d5dbfd;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #d5dbfd;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #d5dbfd;
+}
+
+:-ms-input-placeholder {
+   color: #d5dbfd;
+}
+
+#registro form{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 25px;
+    background: #FFFFFF;
+    color: #d5dbfd;
+    font-size: 22px;
+}
+
+#registro h3 label{
+    font-size: 20px;
+    color: #a4a4a4;
+    align-items: center;
+}
+
+#imglabel{
+    font-size: 18px;
+    color: #a4a4a4;
+    align-items: center;
+    margin-bottom: -20px;
+    margin-left: 10%;
+}
+#registro h3 {
+    text-align: center;
+}
+
+.campoLogin {
+    width: 76%;
+    height: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5px;
+    padding-left: 4%;
+    background: #58626e;
+    color: #d5dbfd;
+    border: 0px;
+}
+
+.btn {
+    width: 100%;
+    height: 65px;
+    border: 0px;
+    background: #ADD8E6;;
+    color: #fffcff;
+    margin-top: 32px;
+    font-size:  22px;
+}
+
+.btn:hover {
+    background: #483D8B;
+}
+
+#registro a {
+    width: 100%;
+    text-align: center;
+}
+
+.inputimage {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+    background: #58626e;
+    color: #d5dbfd;
+}

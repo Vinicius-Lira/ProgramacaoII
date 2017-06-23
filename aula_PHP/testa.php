@@ -15,7 +15,7 @@
             if($_GET['u']=='usuario' && $_GET['s']==12345){
                 header("Location: conteudo.php?login=1");
             }else{
-                header("LOcation: index.php?login=0");
+                header("Location: index.php?login=0");
             }
 
             $_SESSION['nome'] = $_GET['n'];

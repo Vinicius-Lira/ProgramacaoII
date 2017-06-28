@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -26,7 +27,18 @@
 							<li><a href="<?php print $pagcomparajogos ?>">Comparar Jogos</a></li>
 							<li><a href="<?php print $pagsobrenos ?>">Sobre nós</a></li>
 							<li><a href="<?php print $pagesports ?>">E-Sports</a></li>
-							<li><a href="<?php print $login ?>">Login</a></li>
+							<?php if(isset($_SESSION['LOGIN'])): ?>
+								<?php if($_SESSION['LOGIN'] == 1): ?>
+										<? $usuario = 'profile.php?user=' . $_SESSION['USER']; ?>
+										<li><a href="<?php print $usuario ?>"><?php print 'Olá, ' . $_SESSION['USER'] ?></a></li>
+										<li>|</li>
+										<li><a href="<?php print $sair ?>">Sair</a></li>
+								<?php else: ?>
+										<li><a href="<?php print $login ?>" > Login </a></li>
+								<? endif ?>
+							<?php else: ?>
+								<li><a href="<?php print $login ?>" > Login </a></li>
+							<? endif ?>
 						</ul>
 					</nav>
 				</header>

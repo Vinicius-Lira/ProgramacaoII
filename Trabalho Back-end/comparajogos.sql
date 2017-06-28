@@ -31,6 +31,13 @@ CREATE TABLE JOGO(
     PLATAFORMA VARCHAR(80) NOT NULL
 );
 
+CREATE TABLE COMENTARIOS(
+    ID INTEGER AUTO_INCREMENT PRIMARY KEY,
+    COMENTARIO VARCHAR(1024) NOT NULL,
+    IDJOGO INTEGER NOT NULL,
+    IDUSER INTEGER NOT NULL
+);
+
 CREATE TABLE ESPORTS(
     ID INTEGER NOT NULL,
     NOMEGAME VARCHAR(32) NOT NULL,
@@ -81,8 +88,6 @@ CREATE TABLE USUARIOS(
                         Conclusão
                         <p>Arma 3 é o jogo definitivo da série combinando tudo o que os desenvolvedores aprenderam ao longo dos anos. Um dos melhores jogos de tiro em primeira pessoa unido de uma comunidade incrível que sabe se aproveitar de seu editor de campanhas para criar conteúdos tão bons quanto os oficiais.</p>
 ', 'arma3.jpg', 'TechTudo', 'http://www.techtudo.com.br/review/arma-3.html', 'arma3.jpg', '9', '2', '8', '5', 'Pros', 'Contras', 'PC, PS4');
-
-ID	TITLE	NDATA	TEXTO	RESUMONOTICIA	FONTES	LINKFONTE	NOMEFONTEIMAGENS	LINKIMAGEM	NOMEIMAGEM
 
 INSERT INTO NOTICIAS VALUES(1, 'Star Wars Battlefront II não terá Season Pass, mas terá Early Access', '19 ABR 2017 - 17H00', '<p id="text">
     &emsp;&emsp;Não adianta: o sistema de passe de temporada é algo comum atualmente, mas ele ainda não desce pela garganta de muita gente. Afinal, trata-se de um modelo que cobra previamente por conteúdo extra de um jogo que, muitas vezes, nem foi lançado ainda. Parece que a EA está aprendendo com os erros e decidiu: Star Wars Battlefront II não terá Season Pass.

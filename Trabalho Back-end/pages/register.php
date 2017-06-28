@@ -48,12 +48,13 @@
                         // tenta mover o arquivo para o destino
                         if ( @move_uploaded_file ( $arquivo_tmp, $destino ) ) {
                             echo 'Arquivo salvo com sucesso em : <strong>' . $destino . '</strong><br />';
-                            print '<img src = "' . $destino . '" width="500" height="500"/>';
+                            /*print '<img src = "' . $destino . '" width="500" height="500"/>';*/
+                            header("Location: login.php");
                         }else{
                             echo 'sem prermisssão!';
                         }
                     }else{
-                        echo 'Você não enviou nenhum arquivo!';
+                        /*echo 'Você não enviou nenhum arquivo!';*/
                     }
 
 

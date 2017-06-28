@@ -15,6 +15,7 @@
 	$pagcontato = "pages/contato.php";
 	$pagparcerias = "pages/parcerias.html";
 	$login = "pages/login.php";
+	$sair = "pages/loginoff.php";
 
 	$plataformaLoc  = "pages/plataforma.php";
 

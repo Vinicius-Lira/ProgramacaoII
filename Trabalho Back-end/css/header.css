@@ -51,9 +51,10 @@ header nav ul {
 }
 
 header nav ul li {
-	padding-left: 30px;
+	padding-left: 15px;
 	display: inline-block;
 	margin-right: 10px;
+	color: white;
 }
 
 header nav ul li a {
@@ -61,4 +62,5 @@ header nav ul li a {
 	font-size: 18px;
 	font-family: 'ubuntu',sans-serif;
 }
+
 /*Fim header*/

@@ -21,6 +21,7 @@
 	include("header.php");
 
 	include("config_DB/connect.php");
+	include("config_DB/conectaDB.php");
 ?>
 <style>
 	<?php

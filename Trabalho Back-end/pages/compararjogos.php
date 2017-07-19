@@ -20,7 +20,8 @@
 
 	include("header.php");
 
-	include("config_DB/connect.php");
+	include("config_DB/function_php.php");
+	include("config_DB/conectaDB.php");
 ?>
 <style>
 	<?php
@@ -37,9 +38,9 @@
 						$result = $PDO->query($sql);
 						$rows = $result->fetchAll( PDO::FETCH_ASSOC);
 					?>
-
+					<h3>Selecione os jogos que deseja comparar</h3>
 					<form action="compararjogos.php" method="GET">
-						<h3>Selecione os jogos que deseja comparar</h3>
+
 						<select class="selectjogos" name="jogo1">
 							<option value="" disabled="disabled" selected="selected">Selecione o jogo</option>
 							<?php foreach ($rows as $i): ?>
@@ -84,9 +85,9 @@
 							<h3>Sobre o jogo</h3>
 							<?php print $rows1[0]['TEXTO'] ?>
 							<br><h3>PRÓS</h3><br>
-							<?php print $rows1[0]['PROS'] ?>
+							<p><?php print $rows1[0]['PROS'] ?></p>
 							<br><h3>CONTRAS</h3><br>
-							<?php print $rows1[0]['CONTRAS'] ?>
+							<p><?php print $rows1[0]['CONTRAS'] ?></p>
 
 							<h4>Fonte: <a href="<?php print $rows1[0]['LINKFONTE'] ?>"><?php print $rows1[0]['FONTE'] ?></a></h4>
 						</div>

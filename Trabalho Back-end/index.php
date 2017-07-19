@@ -21,7 +21,8 @@
 
 	include("pages/header.php");
 
-	include("pages/config_DB/connect.php");
+	include("pages/config_DB/function_php.php");
+	include("pages/config_DB/conectaDB.php");
 ?>
 <!-- Importa os estilos -->
 <style>
@@ -34,12 +35,15 @@
 				<section>
 
 					<?php
-						$sql = "SELECT * FROM DESTAQUEINDEX";
-						$result = $PDO->query($sql);
-						$rows = $result->fetchAll( PDO::FETCH_ASSOC);
-						$emdestaque = $rows[0]['DESTAQUE'];
-						$video = $rows[0]['LINKVIDEO'];
-						$id = $rows[0]['ID'];
+						if(verifica_se_existe_itens_tabela("DESTAQUEINDEX")){
+							$sql = "SELECT * FROM DESTAQUEINDEX";
+							$result = $PDO->query($sql);
+							$rows = $result->fetchAll( PDO::FETCH_ASSOC);
+
+							$emdestaque = $rows[0]['DESTAQUE'];
+							$video = $rows[0]['LINKVIDEO'];
+							$id = $rows[0]['ID'];
+						}
 					?>
 					<!-- Assassin's creed III -->
 					<h4>JOGO EM DESTAQUE:<a href="pages/paginajogo.php?id=<?php print $id ?>" ><?php print $emdestaque ?> </a></h4><br>

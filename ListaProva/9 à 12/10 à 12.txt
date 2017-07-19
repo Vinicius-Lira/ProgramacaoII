@@ -1,0 +1,15 @@
+10 - O SQL Injection é um ataque que visa enviar comandos nocivos
+através dos campos de formulários ou através de URLs.
+alguns metódos para proteger são:
+    -Parametrização das consultas
+    -Usar "stored procedures"
+    -Verificar toda  entrada fornecida pelo usuário
+    -Limitar privilégios aos acessos
+
+11 - Toda comunicação feita em um site com protocolo HTTPS é
+criptografada diferentemente do HTTP onde não há essa criptográfia
+e em redes de WI-FI principalmente e outras conexões propicias a
+phishing a comunicação pode ser interceptada facilmente.
+
+12 -  Por que o md5 é um tipo de criptografia com hashes one-way, isto é
+não tem como descobrir o texto original baseando-se no texto já codificado.

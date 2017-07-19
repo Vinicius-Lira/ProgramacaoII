@@ -1,5 +1,7 @@
 <?php
     echo '<title>Register</title>';
+    include("config_DB/function_php.php");
+    include("config_DB/conectaDB.php");
 
     if(isset($_POST['username']) && isset($_POST['email']) && isset($_POST['senha'])){
         $username = $_POST['username'];
@@ -7,22 +9,15 @@
         $senha = $_POST['senha'];
 
         if(($username != '') && ($email != '') && ($senha != '')){
-            include("config_DB/connect.php");
             //Conta o numero de registros na plataforma passada por parametro;
-            $sql = "SELECT COUNT(*) FROM USUARIOS WHERE USERNAME='$username'";
-            $result = $PDO->query($sql);
-            $num_rows = $result->fetchColumn();
+            $num_rows = numero_registros_tabela("USUARIOS", "USERNAME", $username);
             //Se não tiver nenhum usuario com o mesmo nome
             if($num_rows == 0){
-                $sql = "SELECT COUNT(*) FROM USUARIOS WHERE EMAIL='$email'";
-                $result = $PDO->query($sql);
-                $num_rows = $result->fetchColumn();
+                $num_rows = numero_registros_tabela("USUARIOS", "EMAIL", $email);
+
                 //Se não tiver nenhum email igual
                 if($num_rows == 0){
-                    $sql = "SELECT COUNT(*) FROM USUARIOS";
-                    $result = $PDO->query($sql);
-                    $num_rows = $result->fetchColumn();
-                    $id = $num_rows + 1;
+                    $id = id_maximo_tabela("USUARIOS");
                     //Pega a data e hora nome momento do cadastro do usuario
                     date_default_timezone_set('America/Sao_Paulo');
                     $date = date('d-m-Y H:i');
@@ -48,24 +43,25 @@
                         // tenta mover o arquivo para o destino
                         if ( @move_uploaded_file ( $arquivo_tmp, $destino ) ) {
                             echo 'Arquivo salvo com sucesso em : <strong>' . $destino . '</strong><br />';
-                            /*print '<img src = "' . $destino . '" width="500" height="500"/>';*/
                             header("Location: login.php");
                         }else{
                             echo 'sem prermisssão!';
                         }
                     }else{
                         /*echo 'Você não enviou nenhum arquivo!';*/
+                        header("Location: login.php");
                     }
 
 
-
-
-                    $sql = "INSERT INTO USUARIOS VALUES(:id,:username, :email, :datacriacao, :nomeimg,:senha)";
+                    $sql = "INSERT INTO USUARIOS(username, email, datacriacao, nomeimg, senha) VALUES(:username, :email, :datacriacao, :nomeimg,:senha)";
                     $result = $PDO->prepare($sql);
 
-                    $nomeimg = "01.png";
+                    if(isset($novoNome)){
+                        $nomeimg = $novoNome;
+                    }else{
+                        $nomeimg = " ";
+                    }
 
-                    $result->bindValue(":id", $id);
                     $result->bindValue(":username", $username);
                     $result->bindValue(":email", $email);
                     $result->bindValue(":datacriacao", $date);
@@ -76,6 +72,7 @@
                     header("Location: registro.php?error=4");
                 }
             }else{
+                //error3
                 header("Location: registro.php?error=3");
             }
         }else{

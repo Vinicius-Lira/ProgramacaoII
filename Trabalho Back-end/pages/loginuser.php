@@ -1,7 +1,8 @@
 <?php
     session_start();
 
-    include("config_DB/connect.php");
+    include("config_DB/function_php.php");
+    include("config_DB/conectaDB.php");
 
     if(isset($_POST['username'])){
         $username = $_POST['username'];
@@ -14,7 +15,7 @@
         header("Location: login.php?error=404");
     }
 
-    if(($username != '') && ($password != '')){
+    if(($username != "") && ($password != "")){
         $sql = "SELECT * FROM USUARIOS WHERE USERNAME='$username'";
         $result = $PDO->query($sql);
         $rows = $result->fetchAll( PDO::FETCH_ASSOC);

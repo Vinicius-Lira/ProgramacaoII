@@ -20,7 +20,8 @@
 
 	include("header.php");
 
-	include("config_DB/connect.php");
+	include("config_DB/function_php.php");
+	include("config_DB/conectaDB.php");
 
 ?>
 <style>

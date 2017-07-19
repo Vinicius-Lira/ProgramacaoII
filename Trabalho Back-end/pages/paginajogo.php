@@ -20,7 +20,8 @@
 
 	include("header.php");
 
-	include("config_DB/connect.php");
+	include("config_DB/function_php.php");
+	include("config_DB/conectaDB.php");
 ?>
 <style>
 	<?php
@@ -88,6 +89,10 @@
                     </div>
 
                 </div>
+
+				<div class="comentarios">
+					<br><h3>Comentários</h3>
+				</div>
 
 				<div id="aux"></div>
 <?php

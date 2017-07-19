@@ -100,3 +100,40 @@
     font-size: 22px;
     color: black;
 }
+
+
+#errorEmail {
+    width: 80%;
+    height: 18px;
+    margin-left: 10%;
+    font-size: 16px;
+    color: #ea4545;
+    text-align: center;
+}
+
+#errorUsername {
+    width: 80%;
+    height: 18px;
+    margin-left: 10%;
+    font-size: 16px;
+    color: #ea4545;
+    text-align: center;
+}
+
+#errorSenha {
+    width: 80%;
+    height: 18px;
+    margin-left: 10%;
+    font-size: 16px;
+    color: #ea4545;
+    text-align: center;
+}
+
+.error {
+    width: 80%;
+    height: 18px;
+    margin-left: 10%;
+    font-size: 22px;
+    color: #ea4545;
+    text-align: center;
+}

@@ -15,12 +15,14 @@
 	$pagcontato = "contato.php";
 	$pagparcerias = "parcerias.html";
 	$login = "login.php";
-	
+	$sair = "loginoff.php";
+
 	$plataformaLoc  = "plataforma.php";
 
 	include("header.php");
 
 	include("config_DB/connect.php");
+	include("config_DB/conectaDB.php");
 ?>
 <style>
 	<?php
@@ -29,8 +31,6 @@
 		include ("../css/estiloesports.css");
 	 ?>
 </style>
-
-			<div id="content">
 				<section>
 					<?php
 						$sql = "SELECT * FROM ESPORTS";

@@ -10,10 +10,10 @@ section {
 
 form {
     width: 80%;
-    margin-left: 10%;
+    margin-left: 15%;
 }
 
-form h3 {
+ h3 {
     font-size: 24px;
     font-family: 'ubuntu', sans-serif;
     color: #CCCCCC;
@@ -22,7 +22,7 @@ form h3 {
 }
 
 .selectjogos {
-    width: 30%;
+    width: 41%;
     height: 30px;
     background: #696969;
     color: WHITE;

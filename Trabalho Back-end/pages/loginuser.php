@@ -21,6 +21,7 @@
         $rows = $result->fetchAll( PDO::FETCH_ASSOC);
 
         if(($rows[0]['SENHA'] == $password) && ($rows[0]['USERNAME'] == $username)){
+            $_SESSION['ID'] = $rows[0]['ID'];
             $_SESSION['USER'] = $username;
             $_SESSION['LOGIN'] = 1;
             header("Location: ../index.php");

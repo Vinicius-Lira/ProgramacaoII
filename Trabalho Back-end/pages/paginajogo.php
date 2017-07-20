@@ -15,7 +15,8 @@
 	$pagcontato = "contato.php";
 	$pagparcerias = "parcerias.html";
 	$login = "login.php";
-
+	$sair = "loginoff.php";
+	$pagperfil = "";
 	$plataformaLoc  = "plataforma.php";
 
 	include("header.php");
@@ -90,9 +91,10 @@
 
                 </div>
 
-				<div class="comentarios">
-					<br><h3>Comentários</h3>
-				</div>
+				<?php
+					$idJogo = $id;
+					include("comentarios.php");
+				?>
 
 				<div id="aux"></div>
 <?php

@@ -13,6 +13,15 @@
         return $rows;
     }
 
+    function busca_usuario($id){
+        include("conectaDB.php");
+        $sql = "SELECT * FROM USUARIOS WHERE ID=".$id;
+        $result = $PDO->query($sql);
+        $rows = $result->fetchAll( PDO::FETCH_ASSOC);
+
+        return $rows;
+    }
+
     function numero_registros_tabela($nome_tabela, $nome_campo, $buscar){
         include("conectaDB.php");
         if($nome_campo != "" && $buscar != ""){
@@ -57,4 +66,5 @@
         }
         return false;
     }
+
 ?>

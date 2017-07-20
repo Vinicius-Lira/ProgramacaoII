@@ -16,7 +16,7 @@
 	$pagparcerias = "parcerias.html";
 	$login = "login.php";
 	$sair = "loginoff.php";
-	$pagperfil = "";
+    $pagperfil = "";
 
 	$plataformaLoc  = "plataforma.php";
 
@@ -30,22 +30,34 @@
 		include ("../css/header.css");
 		include ("../css/footer.css");
 		include ("../css/estiloesports.css");
+        include ("../css/profile.css");
 	 ?>
 </style>
-				<section>
-					<?php
-						$sql = "SELECT * FROM ESPORTS";
-						$result = $PDO->query($sql);
-						$rows = $result->fetchAll( PDO::FETCH_ASSOC);
-					 ?>
-					<h3>Calendário E-sports: veja as datas das principais competições de 2017</h3>
-					<?php foreach ($rows as $i):?>
-						<h4><?php print $i['NOMEGAME'] ?></h4>
-						<?php print $i['TEXTO'] ?>
-					<?php endforeach ?>
+
+    <?php
+        if(isset($_GET['user'])){
+            if($_GET['user'] == ''){
+                echo '<h3>Usuário não encontrado!</h3>';
+            }else {
+                $id = $_GET['user'];
+                $usuario = busca_usuario($id);
+                ?>
+                <div class="Usuario" >
+                    <img src="../imagens/usuarios/<? print $usuario[0]['NOMEIMG'] ?>"/>
+                    <p>Nome:  <?php print $usuario[0]['USERNAME'] ?></p>
+                    <p>E-mail:  <?php print $usuario[0]['EMAIL'] ?></p>
+                    <p>Data cadastro:  <?php print $usuario[0]['DATACRIACAO'] ?></p>
+                </div>
+
+                <?php
+            }
 
 
-				</section>
+        }else {
+            echo '<h3>Usuário não encontrado!</h3>';
+        }
+     ?>
+
 <?php
 	include("footer.php");
 ?>

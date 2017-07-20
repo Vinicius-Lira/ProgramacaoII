@@ -59,7 +59,7 @@
                     if(isset($novoNome)){
                         $nomeimg = $novoNome;
                     }else{
-                        $nomeimg = " ";
+                        $nomeimg = "noneUser.png";
                     }
 
                     $result->bindValue(":username", $username);

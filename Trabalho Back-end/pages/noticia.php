@@ -15,12 +15,13 @@
 	$pagcontato = "contato.php";
 	$pagparcerias = "parcerias.html";
 	$login = "login.php";
-
+	$sair = "loginoff.php";
+	$pagperfil = "";
 	$plataformaLoc  = "plataforma.php";
 
 	include("header.php");
 
-	include("config_DB/connect.php");
+	include("config_DB/function_php.php");
 	include("config_DB/conectaDB.php");
 ?>
 <style>

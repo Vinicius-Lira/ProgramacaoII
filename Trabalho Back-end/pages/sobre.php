@@ -15,7 +15,7 @@
 	$pagcontato = "contato.php";
 	$pagparcerias = "parcerias.html";
 	$login = "login.php";
-
+	$pagperfil = "";
 	$plataformaLoc  = "plataforma.php";
 
 	include("header.php");
@@ -28,7 +28,7 @@
 	 ?>
 </style>
 
-			
+
 				<section>
                     <div id="sobre">
                         <h5 id="texto">Sobre Nós</h5>

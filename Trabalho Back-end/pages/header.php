@@ -29,8 +29,8 @@
 							<li><a href="<?php print $pagesports ?>">E-Sports</a></li>
 							<?php if(isset($_SESSION['LOGIN'])): ?>
 								<?php if($_SESSION['LOGIN'] == 1): ?>
-										<? $usuario = 'profile.php?user=' . $_SESSION['USER']; ?>
-										<li><a href="<?php print $usuario ?>"><?php print 'Olá, ' . $_SESSION['USER'] ?></a></li>
+										<? $usuario = 'profile.php?user=' . $_SESSION['ID']; ?>
+										<li><a href="<?php print $pagperfil . $usuario ?>"><?php print 'Olá, ' . $_SESSION['USER'] ?></a></li>
 										<li><a href="<?php print $sair ?>">Sair</a></li>
 								<?php else: ?>
 										<li><a href="<?php print $login ?>" > Login </a></li>

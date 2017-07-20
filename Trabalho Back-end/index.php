@@ -16,6 +16,7 @@
 	$pagparcerias = "pages/parcerias.html";
 	$login = "pages/login.php";
 	$sair = "pages/loginoff.php";
+	$pagperfil = "pages/";
 
 	$plataformaLoc  = "pages/plataforma.php";
 
@@ -45,7 +46,7 @@
 							$id = $rows[0]['ID'];
 						}
 					?>
-					<!-- Assassin's creed III -->
+
 					<h4>JOGO EM DESTAQUE:<a href="pages/paginajogo.php?id=<?php print $id ?>" ><?php print $emdestaque ?> </a></h4><br>
 					<iframe src="<?php print $video ?>" allowfullscreen></iframe>
 				</section>

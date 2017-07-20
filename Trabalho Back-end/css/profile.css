@@ -1,0 +1,29 @@
+h3 {
+    font-family: 'Ubuntu Mono';
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.Usuario {
+    width: 70%;
+    margin-left: 20%;
+    margin-bottom: 150px;
+    margin-top: 150px;
+    /*background: black;*/
+}
+
+.Usuario img {
+    width: 250px;
+    height: 250px;
+    margin-right: 50px;
+    float: left;
+}
+
+.Usuario p {
+    font-family: 'Ubuntu Mono';
+    font-size: 26px;
+    margin-left: 50px;
+    margin-top: 50px;
+    color: #FF99FF;
+}
